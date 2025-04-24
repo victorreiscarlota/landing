@@ -7,28 +7,31 @@ import gsap from 'gsap';
 import Image from 'next/image';
 import Rounded from '../../common/RoundedButton/Index';
 
+
 const projects = [
   {
-    title: "Photo 1",
-    src: "",
+    title: "Foto 1",
+    src: "gato-persa.png",
     color: "#000000"
   },
   {
-    title: "Photo 2",
-    src: "",
+    title: "Foto 2",
+    src: "gato-siames-muda-de-cor.jpg",
     color: "#8C8C8C"
   },
   {
-    title: "Photo 3",
-    src: "",
+    title: "Foto 3",
+    src: "como-alimentar-filhote-de-gato.jpg",
     color: "#EFE8D3"
   },
   {
-    title: "Photo 4",
-    src: "",
+    title: "Foto 4",
+    src: "oi.jpg",
     color: "#706D63"
   }
 ]
+
+console.log("AQUI AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA: ", projects);
 
 const scaleAnimation = {
     initial: {scale: 0, x:"-50%", y:"-50%"},
@@ -85,8 +88,8 @@ export default function Home() {
         })
       }
     </div>
-    <Rounded>
-      <p>Mais serviços</p>
+    <Rounded >
+      <p>Adote aqui</p>
     </Rounded>
     <>
         <motion.div ref={modalContainer} variants={scaleAnimation} initial="initial" animate={active ? "enter" : "closed"} className={styles.modalContainer}>

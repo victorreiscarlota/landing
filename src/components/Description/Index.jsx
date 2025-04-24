@@ -22,7 +22,7 @@ export default function Index() {
                 <motion.p variants={opacity} animate={isInView ? "open" : "closed"}>Lorem Ipsum.</motion.p>
                 <div data-scroll data-scroll-speed={0.1}>
                     <Rounded className={styles.button}>
-                        <p>About us</p>
+                        <p>Adote</p>
                     </Rounded>
                 </div>
             </div>
